@@ -1,0 +1,9 @@
+default['php']['version']['major'] = "5.5"
+default['php']['version']['minor'] = "16"
+default['php']['install_flavor'] = "yum"
+default['php']['rpm']['url'] = "http://localhost/"
+default['php']['fpm']['user'] = "nginx"
+default['php']['fpm']['group'] = "nginx"
+default['php']['fpm']['listen'] = "/var/run/php-fpm/php-fpm.sock"
+default['php']['fpm']['log_rotate'] = "31"
+default['php']['webserver'] = nil    # restart service name(eg. httpd or nginx)

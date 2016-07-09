@@ -1,0 +1,10 @@
+/var/log/php-fpm/5.5/*log {
+    daily
+    rotate <%= node['php']['fpm']['log_rotate'] %>
+    dateext
+    missingok
+    sharedscripts
+    postrotate
+	/bin/kill -SIGUSR1 `cat /var/run/php-fpm/php-fpm-5.5.pid 2>/dev/null` 2>/dev/null || true
+    endscript
+}
