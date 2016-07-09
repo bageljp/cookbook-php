@@ -8,9 +8,9 @@ cookbook なので berkshelf で取ってきて使いましょう。
 
 * Berksfile
 ```ruby
-source "http://github.com/bageljp/"
+source "https://supermarket.chef.io"
 
-cookbook "php"
+cookbook "php", git: "https://github.com/bageljp/cookbook-php.git"
 ```
 
 ```
